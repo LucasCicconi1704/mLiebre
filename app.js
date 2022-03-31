@@ -10,7 +10,7 @@ app.listen(PORT,() => {
     console.log('Servidor corriendo en puerto 3000');
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
 
